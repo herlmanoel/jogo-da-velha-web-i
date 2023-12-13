@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jogo da Velha</h1>
+    <div class="board">
+    </div>
+    <p class="message">É a vez do jogador X</p>
+    <button class="reset-btn">Reiniciar Jogo</button>
+    <div>
+      <label for="opponent">Jogar contra:</label>
+      <select id="opponent">
+        <option value="human">Humano</option>
+        <option value="computer">Computador</option>
+      </select>
+    </div>
+    <br>
+    <br>    
+    <button onclick="atualizarTamanhoMatriz()">Mudar Tamanho do Tabuleiro</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
