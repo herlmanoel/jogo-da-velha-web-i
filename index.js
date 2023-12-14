@@ -142,6 +142,7 @@ const resetGame = () => {
     if (opponentSelect.value === 'computer' && jogadorAtual === 'O') {
         jogadaComputador();
     }
+    resetButton.textContent = 'Reiniciar Jogo'
 };
 
 opponentSelect.addEventListener('change', () => {
