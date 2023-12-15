@@ -86,8 +86,11 @@ const alterarBoard = (index) => {
         if (ganhador) {
             if (ganhador === 'draw') {
                 message.textContent = 'Velha!';
+                message.classList.add('message-draw');
             } else {
                 message.textContent = `O jogador ${ganhador} venceu!`;
+                message.classList.add('message-winner');
+
             }
             statusJogo = false;
         } else {
@@ -127,6 +130,7 @@ const jogadaComputador = () => {
 
 resetButton.addEventListener('click', () => {
     resetGame();
+    message.classList.remove('message-draw', 'message-winner');
 });
 
 const resetGame = () => {
